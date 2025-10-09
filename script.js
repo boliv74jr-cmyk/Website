@@ -101,7 +101,7 @@ function di(){
    window.location.href = "dolphin.html";
 }
 
-if (dl) dl.addEventListener("click",di);
+if (dl) dl.addEventListener("click", di);
 if (Lumber) Lumber.addEventListener("click", Luumber);
 if (cart) cart.addEventListener("click", cartpage);    
 if (about) about.addEventListener("click", aboot);
@@ -112,5 +112,6 @@ if (rt) rt.addEventListener("click", returnhome);
 if (crepe) crepe.addEventListener("click", gocreate);
 if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
+
 
 
