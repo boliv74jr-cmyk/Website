@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome">
+    Welcome
+    <div class="top-buttons">
+      <a href="#Menu" id="menu" class="top-button">Menu</a>
+      <a href="#About" id="about" class="top-button">About</a>
+      <a href="#cart" id="cart" class="top-button">
+        Cart (<span id="cartcount">0</span>)
+      </a>
+      <a href="#logout" id="logout" class="top-button">Log out</a>
+    </div>
+  </div>
+ 
+  <div class="content">
+    <div class="content">
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/dolphin.webp" alt="Dolphin">
+      <h3>Product 1</h3>
+      <p>$5</p>
+      <button class="addtocart" data-name="Dolphin" data-price="5">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/beluga.webp" alt="Beluga">
+      <h3>Product 2</h3>
+      <p>$10</p>
+      <button class="addtocart" data-name="Beluga" data-price="10">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/turtle.webp" alt="Turtle">
+      <h3>Product 3</h3>
+      <p>$5</p>
+      <button class="addtocart" data-name="Turtle" data-price="5">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

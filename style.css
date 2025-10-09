@@ -1,0 +1,166 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #00c6ff, #0072ff); /* Ocean gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(0, 0, 50, 0.7); /* Dark transparent box */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #00ffff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #00ffff; /* Ocean blue button */
+  color: #003366;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0072ff;
+  color: #fff;
+}
+
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffff00; /* yellow so it shows on blue background */
+}
+/* Full-width welcome bar fixed at top */
+#welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, #4CAF50, #2E7D32);
+  color: white;
+  padding: 15px 0;
+  font-size: 28px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;              /* Align text and buttons */
+  justify-content: center;    /* Center text horizontally */
+  align-items: center;
+  gap: 20px;                  /* Space between text and buttons */
+}
+
+/* Buttons inside the welcome bar */
+.top-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.top-button {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.top-button:hover {
+  background-color: rgba(255,255,255,0.4);
+  transform: translateY(-2px);
+}
+
+/* Add padding to body so content isn't hidden behind fixed bar */
+body {
+  padding-top: 70px; /* Adjust to match #welcome height */
+}
+#cart {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: #ff3b3b;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.product {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.add-to-cart {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background: #0056b3;
+}
+
+
