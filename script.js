@@ -18,6 +18,7 @@ const about = document.getElementById("about");
 const addtocartButtons = document.querySelectorAll(".addtocart");
 const numcartd = document.getElementById("cartcount")
 const cart = document.getElementById("cart")
+const Lumber = document.getElementById("Lumber")
 
 function login() {
   let user = usernameinput.value;
@@ -91,6 +92,11 @@ function cartpage (){
    window.location.href = "cart.html";
 }
 
+function Luumber(){
+   window.location.href = "home.html";
+}
+
+if (Lumber) Lumber.addEventListener("click", Luumber);
 if (cart) cart.addEventListener("click", cartpage);    
 if (about) about.addEventListener("click", aboot);
 if (menu) menu.addEventListener("click", menuu);
@@ -100,3 +106,4 @@ if (rt) rt.addEventListener("click", returnhome);
 if (crepe) crepe.addEventListener("click", gocreate);
 if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
+
