@@ -162,5 +162,10 @@ body {
 .add-to-cart:hover {
   background: #0056b3;
 }
+.products p {
+  color: black;
+}
+
+
 
 
