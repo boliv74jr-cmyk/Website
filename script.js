@@ -19,7 +19,7 @@ const menu = document.getElementById("menu");
 const about = document.getElementById("about");
 const addtocartButtons = document.querySelectorAll(".addtocart");
 const numcartd = document.getElementById("cartcount")
-const cart = document.getElementById("cart")
+const cartbtn = document.getElementById("cart");
 const Lumber = document.getElementById("Lumber")
 const Dolphininfo = document.getElementById("Dolphininfo")
 
@@ -86,7 +86,6 @@ function aboot(){
 
 addtocartButtons.forEach(button => {
     button.addEventListener("click", () => {
-        cartcount++;
         if (numcartd) numcartd.textContent = cartcount;
    });
 });
@@ -129,7 +128,7 @@ addButtons.forEach(button => {
 
 if (Dolphininfo) Dolphininfo.addEventListener("click", di);
 if (Lumber) Lumber.addEventListener("click", Luumber);
-if (cart) cart.addEventListener("click", cartpage);    
+if (cartbtn) cartButton.addEventListener("click", cartpage);   
 if (about) about.addEventListener("click", aboot);
 if (menu) menu.addEventListener("click", menuu);
 if (loginbutton) loginbutton.addEventListener("click", login);
@@ -142,4 +141,5 @@ if (logout) logout.addEventListener("click", logou);
 
 
 updateCartCount();
+
 
