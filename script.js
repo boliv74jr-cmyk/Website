@@ -1,6 +1,5 @@
 let usernames = JSON.parse(localStorage.getItem("usernames")) || ["boliv74"];
 let passwords = JSON.parse(localStorage.getItem("passwords")) || ["Turtle33"];
-let cartcount = 0;
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const addButtons = document.querySelectorAll(".addtocart");
@@ -17,7 +16,6 @@ const crepe = document.getElementById("crepe");
 const logout = document.getElementById("logout");
 const menu = document.getElementById("menu");
 const about = document.getElementById("about");
-const addtocartButtons = document.querySelectorAll(".addtocart");
 const numcartd = document.getElementById("cartcount")
 const cartbtn = document.getElementById("cart");
 const Lumber = document.getElementById("Lumber")
@@ -84,12 +82,6 @@ function aboot(){
    window.location.href = "welcome.html";
 }
 
-addtocartButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        if (numcartd) numcartd.textContent = cartcount;
-   });
-});
-
 function cartpage (){
    window.location.href = "cart.html";
 }
@@ -128,7 +120,7 @@ addButtons.forEach(button => {
 
 if (Dolphininfo) Dolphininfo.addEventListener("click", di);
 if (Lumber) Lumber.addEventListener("click", Luumber);
-if (cartbtn) cartButton.addEventListener("click", cartpage);   
+if (cartbtn) cartbtn.addEventListener("click", cartpage);   
 if (about) about.addEventListener("click", aboot);
 if (menu) menu.addEventListener("click", menuu);
 if (loginbutton) loginbutton.addEventListener("click", login);
@@ -137,6 +129,7 @@ if (rt) rt.addEventListener("click", returnhome);
 if (crepe) crepe.addEventListener("click", gocreate);
 if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
+
 
 
 
