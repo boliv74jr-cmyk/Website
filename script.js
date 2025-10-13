@@ -140,6 +140,6 @@ if (logout) logout.addEventListener("click", logou);
 
 
 
-updateCartCount();
+
 
 
