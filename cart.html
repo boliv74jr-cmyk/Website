@@ -7,16 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- Original header -->
   <div id="welcome">
-    Your Cart
+    Welcome
     <div class="top-buttons">
-      <a href="index.html" class="top-button">Back to Shop</a>
-      <a href="#logout" class="top-button">Log out</a>
+      <a href="#Menu" id="menu" class="top-button">Menu</a>
+      <a href="#About" id="about" class="top-button">About</a>
+      <a href="#cart" id="cart" class="top-button">
+        Cart (<span id="cart-count">0</span>)
+      </a>
+      <a href="#logout" id="logout" class="top-button">Log out</a>
     </div>
   </div>
 
-  <!-- Cart Content -->
+  <!-- Cart content -->
   <div class="content">
     <div id="cart-items" class="product-grid"></div>
 
@@ -26,9 +31,12 @@
     </div>
   </div>
 
-  <script src="cart.js"></script>
+  <!-- External JS -->
+  <script src="script.js"></script>
+
 </body>
 </html>
+
 
 
 
