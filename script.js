@@ -1,7 +1,9 @@
 let usernames = JSON.parse(localStorage.getItem("usernames")) || ["boliv74"];
 let passwords = JSON.parse(localStorage.getItem("passwords")) || ["Turtle33"];
 let cartcount = 0;
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+const addButtons = document.querySelectorAll(".addtocart");
 const usernameinput = document.getElementById("usernamedata");
 const passwordinput = document.getElementById("passworddata");
 const loginbutton = document.getElementById("enter");
@@ -101,6 +103,30 @@ function di(){
    window.location.href = "dolphin.html";
 }
 
+function updateCartCount() {
+  const count = cart.reduce((acc, item) => acc + item.quantity, 0);
+  document.getElementById("cartcount").textContent = count;
+}
+
+function addToCart(name, price) {
+  const existing = cart.find(item => item.name === name);
+  if (existing) {
+    existing.quantity++;
+  } else {
+    cart.push({ name, price: Number(price), quantity: 1 });
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+}
+
+addButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const name = button.dataset.name;
+    const price = button.dataset.price;
+    addToCart(name, price);
+  });
+});
+
 if (Dolphininfo) Dolphininfo.addEventListener("click", di);
 if (Lumber) Lumber.addEventListener("click", Luumber);
 if (cart) cart.addEventListener("click", cartpage);    
@@ -115,4 +141,5 @@ if (logout) logout.addEventListener("click", logou);
 
 
 
+updateCartCount();
 
