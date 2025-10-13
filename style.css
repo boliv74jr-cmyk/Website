@@ -1,110 +1,124 @@
+/* ====== Global Layout ====== */
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #00c6ff, #0072ff); /* Ocean gradient */
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, #0B0F19 0%, #030712 100%);
+  color: #E5E7EB;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  color: #fff;
+  padding-top: 70px; /* space for welcome bar */
 }
 
+/* ====== Container (login/product area) ====== */
 .container {
-  background-color: rgba(0, 0, 50, 0.7); /* Dark transparent box */
+  background-color: rgba(17, 24, 39, 0.85); /* translucent dark slate */
   padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 224, 255, 0.1);
   text-align: center;
-  width: 300px;
+  width: 320px;
+  backdrop-filter: blur(12px);
 }
 
 h1 {
   margin-bottom: 20px;
   font-size: 28px;
+  background: linear-gradient(90deg, #00E0FF, #7B61FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
+/* ====== Inputs ====== */
 input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 10px 0;
-  border-radius: 8px;
-  border: none;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 224, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #E5E7EB;
   font-size: 16px;
 }
 
 input:focus {
-  outline: 2px solid #00ffff;
+  outline: none;
+  border-color: #00E0FF;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.4);
 }
 
+/* ====== Buttons ====== */
 button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 10px 0;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
-  background-color: #00ffff; /* Ocean blue button */
-  color: #003366;
+  background: linear-gradient(90deg, #00E0FF, #7B61FF);
+  color: white;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #0072ff;
-  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #00E0FF;
 }
 
+/* ====== Message ====== */
 #message {
   margin-top: 10px;
   font-weight: bold;
-  color: #ffff00; /* yellow so it shows on blue background */
+  color: #FFD43B;
 }
-/* Full-width welcome bar fixed at top */
+
+/* ====== Welcome Bar ====== */
 #welcome {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   text-align: center;
-  background: linear-gradient(90deg, #4CAF50, #2E7D32);
-  color: white;
+  background: linear-gradient(90deg, #111827, #1E293B);
+  color: #00E0FF;
   padding: 15px 0;
   font-size: 28px;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 224, 255, 0.1);
   z-index: 1000;
-  display: flex;              /* Align text and buttons */
-  justify-content: center;    /* Center text horizontally */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 20px;                  /* Space between text and buttons */
+  gap: 20px;
 }
 
-/* Buttons inside the welcome bar */
 .top-buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .top-button {
   text-decoration: none;
-  padding: 8px 15px;
-  background-color: rgba(255,255,255,0.2);
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s, transform 0.2s;
+  padding: 8px 18px;
+  background: linear-gradient(90deg, rgba(0,224,255,0.2), rgba(123,97,255,0.2));
+  color: #E5E7EB;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .top-button:hover {
-  background-color: rgba(255,255,255,0.4);
+  background: linear-gradient(90deg, #00E0FF, #7B61FF);
+  color: #fff;
   transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.5);
 }
 
-/* Add padding to body so content isn't hidden behind fixed bar */
-body {
-  padding-top: 70px; /* Adjust to match #welcome height */
-}
+/* ====== Cart Badge ====== */
 #cart {
   position: relative;
 }
@@ -113,13 +127,15 @@ body {
   position: absolute;
   top: -5px;
   right: -10px;
-  background: #ff3b3b;
+  background: #FF3B3B;
   color: white;
   border-radius: 50%;
   padding: 2px 6px;
   font-size: 12px;
   font-weight: bold;
 }
+
+/* ====== Products ====== */
 .product-grid {
   display: flex;
   justify-content: center;
@@ -129,18 +145,19 @@ body {
 }
 
 .product {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 224, 255, 0.05);
   padding: 20px;
   width: 200px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 .product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(0, 224, 255, 0.15);
 }
 
 .product img {
@@ -149,22 +166,26 @@ body {
 }
 
 .add-to-cart {
-  background: #007bff;
+  background: linear-gradient(90deg, #00E0FF, #7B61FF);
   color: white;
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.3s ease;
   margin-top: 10px;
 }
 
 .add-to-cart:hover {
-  background: #0056b3;
+  box-shadow: 0 0 15px #00E0FF;
+  transform: translateY(-2px);
 }
+
 .products p {
-  color: black;
+  color: #E5E7EB;
 }
+
+
 
 
 
