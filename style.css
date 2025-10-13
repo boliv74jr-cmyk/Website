@@ -278,6 +278,32 @@ h1 {
   transform: translateY(-2px);
   box-shadow: 0 0 20px #00E0FF;
 }
+/* Cart Page Styles */
+.cart-total {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cart-total button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-grid .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 
 
 
