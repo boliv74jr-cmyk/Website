@@ -306,7 +306,7 @@ h1 {
 .content {
   width: 100%;
   padding: 50px;
-  background-color: #121212; /* dark theme background */
+  background: none; /* removes blue or black background */
   display: flex;
   justify-content: center;
 }
@@ -319,13 +319,15 @@ h1 {
   width: 100%;
 }
 
+/* Left box styles */
 .left-box {
   flex: 1;
-  background-color: #1e1e1e;
+  background-color: #0a1630; /* dark blue box */
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform; /* smooth scaling */
 }
 
 .left-box:hover {
@@ -339,31 +341,39 @@ h1 {
   object-fit: cover;
 }
 
+/* Right box styles */
 .right-box {
   flex: 1;
-  background-color: #1a1a1a;
+  background-color: #0b1b38; /* darker blue box */
   border-radius: 20px;
   padding: 30px;
   color: #eaeaea;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
+  will-change: transform;
 }
 
+.right-box:hover {
+  transform: scale(1.05); /* box grows on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* stronger shadow */
+}
+
+/* Right box text */
 .right-box h3 {
   font-size: 2rem;
-  color: #4fa3ff; /* your site’s accent blue */
+  color: #4fa3ff;
   margin-bottom: 15px;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .right-box p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #cccccc;
+  color: #cfd8e3;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
-
-
-
-
-
 
 
 
