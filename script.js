@@ -21,6 +21,7 @@ const cartbtn = document.getElementById("cart");
 const Lumber = document.getElementById("Lumber")
 const Dolphininfo = document.getElementById("Dolphininfo")
 const Belugainfo = document.getElementById("Belugainfo")
+const Turtleinfo = document.getElementById("Turtleinfo")
 
 function login() {
   let user = usernameinput.value;
@@ -95,8 +96,12 @@ function di(){
    window.location.href = "dolphin.html";
 }
 
-function bi()
+function bi(){
    window.location.href = "Beluga.html";
+}
+
+function ti(){
+   window.location.href = "turtle.html
 }
 
 function updateCartCount() {
@@ -135,6 +140,7 @@ if (crepe) crepe.addEventListener("click", gocreate);
 if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
 if (Belugainfo) Belugainfo.addEventListener("click", bi);
+if (Turtleinfo) Turtleinfo.addEventListener("click", ti);
 
 
 
