@@ -16,12 +16,12 @@ const crepe = document.getElementById("crepe");
 const logout = document.getElementById("logout");
 const menu = document.getElementById("menu");
 const about = document.getElementById("about");
-const numcartd = document.getElementById("cartcount")
+const numcartd = document.getElementById("cartcount");
 const cartbtn = document.getElementById("cart");
-const Lumber = document.getElementById("Lumber")
-const Dolphininfo = document.getElementById("Dolphininfo")
-const Belugainfo = document.getElementById("Belugainfo")
-const Turtleinfo = document.getElementById("Turtleinfo")
+const Lumber = document.getElementById("Lumber");
+const Dolphininfo = document.getElementById("Dolphininfo");
+const Belugainfo = document.getElementById("Belugainfo");
+const Turtleinfo = document.getElementById("Turtleinfo");
 
 function login() {
   let user = usernameinput.value;
@@ -101,7 +101,7 @@ function bi(){
 }
 
 function ti(){
-   window.location.href = "turtle.html
+   window.location.href = "turtle.html";
 }
 
 function updateCartCount() {
@@ -141,6 +141,7 @@ if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
 if (Belugainfo) Belugainfo.addEventListener("click", bi);
 if (Turtleinfo) Turtleinfo.addEventListener("click", ti);
+
 
 
 
