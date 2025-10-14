@@ -20,6 +20,7 @@ const numcartd = document.getElementById("cartcount")
 const cartbtn = document.getElementById("cart");
 const Lumber = document.getElementById("Lumber")
 const Dolphininfo = document.getElementById("Dolphininfo")
+const Belugainfo = document.getElementById("Belugainfo")
 
 function login() {
   let user = usernameinput.value;
@@ -94,6 +95,10 @@ function di(){
    window.location.href = "dolphin.html";
 }
 
+function bi()
+   window.location.href = "Beluga.html";
+}
+
 function updateCartCount() {
   const count = cart.reduce((acc, item) => acc + item.quantity, 0);
   document.getElementById("cartcount").textContent = count;
@@ -129,6 +134,7 @@ if (rt) rt.addEventListener("click", returnhome);
 if (crepe) crepe.addEventListener("click", gocreate);
 if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
+if (Belugainfo) Belugainfo.addEventListener("click", bi);
 
 
 
