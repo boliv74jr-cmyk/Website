@@ -136,21 +136,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const answer = q.nextElementSibling;
       const faqItem = q.parentElement;
 
-      // Close all answers first
-      document.querySelectorAll(".answer").forEach(a => (a.style.display = "none"));
-      document.querySelectorAll(".faq-item").forEach(i => i.classList.remove("active"));
+      // Close all others
+      document.querySelectorAll(".answer").forEach((a) => {
+        if (a !== answer) a.classList.remove("open");
+      });
+      document.querySelectorAll(".faq-item").forEach((i) => {
+        if (i !== faqItem) i.classList.remove("active");
+      });
 
-      // Toggle this one
-      if (answer.style.display === "block") {
-        answer.style.display = "none";
-        faqItem.classList.remove("active");
-      } else {
-        answer.style.display = "block";
-        faqItem.classList.add("active");
-      }
+      // Toggle the clicked one
+      answer.classList.toggle("open");
+      faqItem.classList.toggle("active");
     });
   });
 });
+
 
 
 if (Dolphininfo) Dolphininfo.addEventListener("click", di);
@@ -166,6 +166,7 @@ if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
 if (Belugainfo) Belugainfo.addEventListener("click", bi);
 if (Turtleinfo) Turtleinfo.addEventListener("click", ti);
+
 
 
 
