@@ -476,6 +476,7 @@ p3 {
   font-size: 16px;
   color: #d3d8e6;
 }
+
 #welcome {
   position: fixed;
   top: 0;
@@ -484,26 +485,26 @@ p3 {
   background: linear-gradient(90deg, #1e2a4a, #13203d);
   color: white;
   display: flex;
-  align-items: center; /* centers logo & buttons vertically */
+  align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 10px 80px; /* adjust spacing inside bar */
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 1000;
-  height: 70px; /* consistent height */
+  height: 80px;
 }
 
 .logo {
-  height: 50px; /* adjust this number for perfect balance */
+  height: 65px; /* makes it bigger */
   width: auto;
   object-fit: contain;
   display: block;
-  margin: 0;
 }
 
 .top-buttons {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 15px; /* spacing between buttons */
+  margin-right: 60px; /* pulls them slightly left */
 }
 
 .top-button {
