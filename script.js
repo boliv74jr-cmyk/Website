@@ -2,7 +2,7 @@ let usernames = JSON.parse(localStorage.getItem("usernames")) || ["boliv74"];
 let passwords = JSON.parse(localStorage.getItem("passwords")) || ["Turtle33"];
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-const addButtons = document.querySelectorAll(".addtocart");
+const addButtons = document.querySelectorAll(".add-to-cart");
 const usernameinput = document.getElementById("usernamedata");
 const passwordinput = document.getElementById("passworddata");
 const loginbutton = document.getElementById("enter");
@@ -172,6 +172,7 @@ if (logout) logout.addEventListener("click", logou);
 if (Belugainfo) Belugainfo.addEventListener("click", bi);
 if (Turtleinfo) Turtleinfo.addEventListener("click", ti);
 if (quest) quest.addEventListener("click", qu);
+
 
 
 
