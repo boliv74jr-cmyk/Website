@@ -8,18 +8,16 @@
 </head>
 <body>
 
-  <!-- Original header -->
+  <!-- Header -->
   <div id="welcome">
     <img src="lophean.logo.png" alt="Lophean Logo" class="logo">
     Welcome
     <div class="top-buttons">
-      <a href="#Menu" id="menu" class="top-button">Menu</a>
-      <a href="#About" id="about" class="top-button">About</a>
-      <a href=#Questions" id="quest" class="top-button">Help</a>
-      <a href="#cart" id="cart" class="top-button">
-        Cart (<span id="cart-count">0</span>)
-      </a>
-      <a href="#logout" id="logout" class="top-button">Log out</a>
+      <a href="menu.html" id="menu" class="top-button">Menu</a>
+      <a href="about.html" id="about" class="top-button">About</a>
+      <a href="#Questions" id="quest" class="top-button">Help</a>
+      <a href="cart.html" id="cart" class="top-button active-cart">Cart (<span id="cartcount">0</span>)</a>
+      <a href="logout.html" id="logout" class="top-button">Log out</a>
     </div>
   </div>
 
@@ -29,17 +27,13 @@
 
     <div class="cart-total">
       <h3>Total: $<span id="cart-total">0.00</span></h3>
-      <button id="clear-cart">Clear Cart</button>
+      <button id="clear-cart" class="clear-cart">Clear Cart</button>
     </div>
   </div>
 
-  <!-- External JS -->
   <script src="script.js"></script>
-
 </body>
 </html>
-
-
 
 
 
