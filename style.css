@@ -484,26 +484,26 @@ p3 {
   background: linear-gradient(90deg, #1e2a4a, #13203d);
   color: white;
   display: flex;
+  align-items: center; /* centers logo & buttons vertically */
   justify-content: space-between;
-  align-items: center; /* keeps everything vertically centered */
-  padding: 10px 40px;
+  padding: 10px 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 1000;
-  height: 80px; /* optional: keeps bar height consistent */
+  height: 70px; /* consistent height */
 }
 
 .logo {
-  height: 45px;
+  height: 50px; /* adjust this number for perfect balance */
   width: auto;
   object-fit: contain;
   display: block;
+  margin: 0;
 }
-
-
 
 .top-buttons {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
 }
 
 .top-button {
@@ -516,6 +516,7 @@ p3 {
 .top-button:hover {
   color: #8cb4ff;
 }
+
 
 
 
