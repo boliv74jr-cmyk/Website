@@ -485,16 +485,21 @@ p3 {
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* keeps everything vertically centered */
   padding: 10px 40px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 1000;
+  height: 80px; /* optional: keeps bar height consistent */
 }
 
 .logo {
-  height: 50px;
+  height: 45px;
   width: auto;
+  object-fit: contain;
+  display: block;
 }
+
+
 
 .top-buttons {
   display: flex;
@@ -511,6 +516,7 @@ p3 {
 .top-button:hover {
   color: #8cb4ff;
 }
+
 
 
 
