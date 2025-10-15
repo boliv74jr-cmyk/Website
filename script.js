@@ -22,6 +22,7 @@ const Lumber = document.getElementById("Lumber");
 const Dolphininfo = document.getElementById("Dolphininfo");
 const Belugainfo = document.getElementById("Belugainfo");
 const Turtleinfo = document.getElementById("Turtleinfo");
+const quest = document.getElementById("quest");
 
 function login() {
   let user = usernameinput.value;
@@ -104,6 +105,10 @@ function ti(){
    window.location.href = "turtle.html";
 }
 
+funtion qu(){
+  window.location.href = "question.html";
+}
+  
 function updateCartCount() {
   const count = cart.reduce((acc, item) => acc + item.quantity, 0);
   document.getElementById("cartcount").textContent = count;
@@ -166,6 +171,7 @@ if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
 if (Belugainfo) Belugainfo.addEventListener("click", bi);
 if (Turtleinfo) Turtleinfo.addEventListener("click", ti);
+if (quest) quest.addEventListener("click", qu);
 
 
 
