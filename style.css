@@ -476,6 +476,42 @@ p3 {
   font-size: 16px;
   color: #d3d8e6;
 }
+#welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1e2a4a, #13203d);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.top-button {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.top-button:hover {
+  color: #8cb4ff;
+}
+
 
 
 
