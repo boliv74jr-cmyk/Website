@@ -382,11 +382,6 @@ h3 {
 p {
   color: black;
 }
-body {
-  font-family: Arial, sans-serif;
-  background: #f0f5ff;
-  padding: 30px;
-}
 
 .faq {
   max-width: 600px;
@@ -439,6 +434,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
