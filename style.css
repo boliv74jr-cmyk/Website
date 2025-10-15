@@ -74,21 +74,22 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  padding: 8px 18px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  font-size: 15px;          /* smaller text */
+  padding: 6px 14px;        /* less padding */
+  border-radius: 8px;       /* slightly smaller corners */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.25s ease;
 }
 
 .top-button:hover {
   background: linear-gradient(90deg, var(--highlight), var(--accent));
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,198,255,0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(0,198,255,0.25);
 }
 
 .top-button:active {
-  transform: scale(0.97);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 /* === Sections & Containers === */
