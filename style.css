@@ -510,7 +510,6 @@ p3 {
   margin-left: 20px;
 }
 
-/* bright gradient hover style */
 .top-button {
   background: linear-gradient(90deg, #00c6ff, #7a5cf4);
   color: white;
@@ -518,14 +517,15 @@ p3 {
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 .top-button:hover {
   background: linear-gradient(90deg, #7a5cf4, #00c6ff);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 
