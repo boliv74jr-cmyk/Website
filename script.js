@@ -105,7 +105,7 @@ function ti(){
    window.location.href = "turtle.html";
 }
 
-funtion qu(){
+function qu(){
   window.location.href = "question.html";
 }
   
@@ -172,6 +172,7 @@ if (logout) logout.addEventListener("click", logou);
 if (Belugainfo) Belugainfo.addEventListener("click", bi);
 if (Turtleinfo) Turtleinfo.addEventListener("click", ti);
 if (quest) quest.addEventListener("click", qu);
+
 
 
 
