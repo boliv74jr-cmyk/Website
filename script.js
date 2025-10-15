@@ -128,6 +128,31 @@ addButtons.forEach(button => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const questions = document.querySelectorAll(".question");
+
+  questions.forEach((q) => {
+    q.addEventListener("click", () => {
+      const answer = q.nextElementSibling;
+      const faqItem = q.parentElement;
+
+      // Close all answers first
+      document.querySelectorAll(".answer").forEach(a => (a.style.display = "none"));
+      document.querySelectorAll(".faq-item").forEach(i => i.classList.remove("active"));
+
+      // Toggle this one
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+        faqItem.classList.remove("active");
+      } else {
+        answer.style.display = "block";
+        faqItem.classList.add("active");
+      }
+    });
+  });
+});
+
+
 if (Dolphininfo) Dolphininfo.addEventListener("click", di);
 if (Lumber) Lumber.addEventListener("click", Luumber);
 if (cartbtn) cartbtn.addEventListener("click", cartpage);   
@@ -141,6 +166,7 @@ if (logbait) logbait.addEventListener("click", gologin);
 if (logout) logout.addEventListener("click", logou);
 if (Belugainfo) Belugainfo.addEventListener("click", bi);
 if (Turtleinfo) Turtleinfo.addEventListener("click", ti);
+
 
 
 
