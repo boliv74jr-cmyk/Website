@@ -383,6 +383,10 @@ p {
   color: black;
 }
 
+p {
+  color: royal bluw;
+}
+
 .faq {
   max-width: 600px;
   margin: auto;
@@ -434,6 +438,7 @@ p {
     transform: translateY(0);
   }
 }
+
 
 
 
